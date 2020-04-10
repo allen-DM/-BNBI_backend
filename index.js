@@ -7,7 +7,7 @@ const cors = require("koa2-cors");
 // const path = require("path");
 const config =require("./config/default.json");
 const app = new Koa();
-
+console.log("work");
 app.use(bodyParser());
 // app.use(serve(path.join(__dirname,"public")));
 app.use(logger());
