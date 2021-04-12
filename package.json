@@ -11,12 +11,24 @@
   "dependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
+    "html-pdf": "^2.2.0",
     "koa": "^2.8.1",
     "koa-bodyparser": "^4.2.1",
     "koa-logger": "^3.2.1",
     "koa-router": "^7.4.0",
     "koa2-cors": "^2.0.6",
+    "log4js": "^6.3.0",
     "mocha": "^6.2.0",
+    "mysql": "^2.18.1",
     "nyc": "^14.1.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.devpack.cc/mr0s00/survey/koastarter.git"
+  },
+  "keywords": []
 }

@@ -1,5 +1,5 @@
 const mysql = require("mysql");
-const dbInfo = require("../config/default.json").database;
+const dbInfo = require("../config/default.json").muysql_database;
 
 const pool = mysql.createPool({
     host     :  dbInfo.host,

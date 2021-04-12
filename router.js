@@ -1,5 +1,6 @@
 const Router = require("koa-router");
 const info = require("./routes/info");
+const law = require("./routes/lawRoutes.js");
 
 // const jwtKoa = require("koa-jwt");
 const config =require("./config/default.json");
@@ -11,6 +12,6 @@ const router = Router();
 //     path:config.jwt.jwtunless//符合路徑的api不做jwt驗證
 // }));
 router.use(`${config.env}/${config.version}/Info`, info.routes());
-
+router.use(`${config.env}/${config.version}`, law.routes());
 
 module.exports = router;
