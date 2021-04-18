@@ -18,7 +18,7 @@ module.exports = {
             console.log(result)
 
             log.info("getReportTemplateList success: ", JSON.stringify(result));
-            await actionLog.actionLog(actionLogConfig.getReportTamplate, { userId, division }, result, errorStatus.GANNERAL_SUCCESS);
+            await actionLog.actionLog(actionLogConfig.getReportTamplate, {keyword }, result, errorStatus.GANNERAL_SUCCESS);
             log.info(JSON.stringify(result));
             return result;
         } catch (error) {

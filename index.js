@@ -11,7 +11,7 @@ app.use(bodyParser());
 // app.use(serve(path.join(__dirname,"public")));
 app.use(logger());
 app.use(cors({
-    origin:  () =>{
+    origin:() =>{
         return "*";
     },
     exposeHeaders: ["WWW-Authenticate", "Server-Authorization","Authorization"],

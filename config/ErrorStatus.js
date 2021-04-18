@@ -1,5 +1,5 @@
 module.exports = {
-    "GANNERAL_SUCCESS": 0,
+    "GANNERAL_SUCCESS": 200,
     "PAY_LOAD_ERROR": 3,
     "REPORT_STATUS_ERROR": 5,
     "DATABASE_ERROR": 11,

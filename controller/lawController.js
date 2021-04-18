@@ -16,7 +16,7 @@ module.exports = {
                 error.errorCode = errorStatus.GANNERAL_ERROR;
                 error.message = error.stack;
             }
-            await actionLog.actionLog(actionLogConfig.getVerdictList, keyword, error.message, error.errorCode);
+            await actionLog.actionLog(actionLogConfig.getVerdictList, request, error.message, error.errorCode);
             log.error("Error: " + JSON.stringify(error));
             return response.responseError(error.errorCode, error.message);
         }
