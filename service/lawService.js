@@ -14,7 +14,7 @@ module.exports = {
         let log = await log4js.createlog4Js(actionLogConfig.getVerdictList);
         try {
             let keyword2 = '%' + keyword + '%';
-            let result = await db.query("SELECT * FROM legal.legalinfo WHERE judgmentid IN (SELECT judgmentid FROM legal.rawdata WHERE jfull like ?);", [keyword2]);       
+            let result = await db.query("SELECT a.* FROM (SELECT a.judgmentid,a.class,a.datetime,a.mainjudge,a.secondaryjudge,a.clerk,a.conclusion,b.jtitle FROM legal.legalinfo AS a LEFT JOIN legal.rawdata AS b ON a.judgmentid=b.judgmentid) AS a WHERE a.judgmentid IN (SELECT judgmentid FROM legal.rawdata WHERE jfull like ?);", [keyword2]);       
             console.log(result)
 
             log.info("getReportTemplateList success: ", JSON.stringify(result));

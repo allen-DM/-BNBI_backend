@@ -1031,3 +1031,5 @@
 [2021-04-18T23:01:53.695] [INFO] GET_VERDICT_LIST - getReportTemplateList success:  [{"judgmentid":1,"datetime":"2021-04-10T16:00:00.000Z","participants":"testParticipants","conclusion":"testconclusion","area":"taiwan"}]
 [2021-04-18T23:01:54.226] [INFO] GET_VERDICT_LIST - keyword: 八十五年度再審字第六一八號
 [2021-04-18T23:01:54.346] [INFO] GET_VERDICT_LIST - getReportTemplateList success:  [{"judgmentid":1,"datetime":"2021-04-10T16:00:00.000Z","participants":"testParticipants","conclusion":"testconclusion","area":"taiwan"}]
+[2021-04-18T23:02:07.927] [INFO] GET_VERDICT_LIST - keyword: 八十五年度再審字第六一八號
+[2021-04-18T23:02:08.030] [INFO] GET_VERDICT_LIST - getReportTemplateList success:  [{"judgmentid":1,"datetime":"2021-04-10T16:00:00.000Z","participants":"testParticipants","conclusion":"testconclusion","area":"taiwan"}]
